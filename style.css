@@ -1,98 +1,157 @@
-* { margin: 0px; padding: 0px; }
-body {
-	font-size: 120%;
-	background: #F8F8FF;
-}
-.header {
-	width: 40%;
-	margin: 50px auto 0px;
-	color: white;
-	background: #5F9EA0;
-	text-align: center;
-	border: 1px solid #B0C4DE;
-	border-bottom: none;
-	border-radius: 10px 10px 0px 0px;
-	padding: 20px;
-}
-form, .content {
-	width: 40%;
-	margin: 0px auto;
-	padding: 20px;
-	border: 1px solid #B0C4DE;
-	background: white;
-	border-radius: 0px 0px 10px 10px;
-}
-.input-group {
-	margin: 10px 0px 10px 0px;
-}
-.input-group label {
-	display: block;
-	text-align: left;
-	margin: 3px;
-}
-.input-group input {
-	height: 30px;
-	width: 93%;
-	padding: 5px 10px;
-	font-size: 16px;
-	border-radius: 5px;
-	border: 1px solid gray;
-}
-#user_type {
-	height: 40px;
-	width: 98%;
-	padding: 5px 10px;
-	background: white;
-	font-size: 16px;
-	border-radius: 5px;
-	border: 1px solid gray;
-}
-.btn {
-	padding: 10px;
-	font-size: 15px;
-	color: white;
-	background: #5F9EA0;
-	border: none;
-	border-radius: 5px;
-}
-.error {
-	width: 92%; 
-	margin: 0px auto; 
-	padding: 10px; 
-	border: 1px solid #a94442; 
-	color: #a94442; 
-	background: #f2dede; 
-	border-radius: 5px; 
-	text-align: left;
-}
-.success {
-	color: #3c763d; 
-	background: #dff0d8; 
-	border: 1px solid #3c763d;
-	margin-bottom: 20px;
-}
-.profile_info img {
-	display: inline-block; 
-	width: 50px; 
-	height: 50px; 
-	margin: 5px;
-	float: left;
-}
-.profile_info div {
-	display: inline-block; 
-	margin: 5px;
-}
-.profile_info:after {
-	content: "";
-	display: block;
-	clear: both;
+html {
+    scroll-behavior: smooth;
+    background-color: #1e2029;
+  }
+.products{
+    margin-left: 1000px;
 }
 
-.card-columns {
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-    @include media-breakpoint-only(xl) {
-      column-count: 5;
-    }
+/* home section styling */
+.home {
+    display: flex;
+    background: url("./T&JBanner.png");
+    height: 90vh;
+    color: #fff;
+    min-height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
   }
+  
+  .home .max-width {
+    width: 100%;
+    display: flex;
+  }
+  
+  .home .max-width .row {
+    margin-right: 0;
+  }
+  
+  .home .home-content .text-1 {
+    font-size: 27px;
+  }
+  
+  .home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  
+  .home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+  }
+  
+  .home .home-content .text-3 span {
+    color: #ac5fdb;
+    font-weight: 500;
+  }
+  
+  .home .home-content a {
+    display: inline-block;
+    background: #ac5fdb;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #ac5fdb;
+    transition: all 0.3s ease;
+  }
+  
+  .home .home-content a:hover {
+    color: #ac5fdb;
+    background: none;
+  }
+body {
+  font-size: 120%;
+  background: #f8f8ff;
+}
+.header {
+  width: 40%;
+  margin: 50px auto 0px;
+  color: white;
+  background: #5f9ea0;
+  text-align: center;
+  border: 1px solid #b0c4de;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+form,
+.content {
+  width: 40%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #b0c4de;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#user_type {
+  height: 40px;
+  width: 98%;
+  padding: 5px 10px;
+  background: white;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5f9ea0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  border-radius: 5px;
+  text-align: left;
+}
+.success {
+  color: #3c763d;
+  background: #dff0d8;
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+.profile_info img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  float: left;
+}
+.profile_info div {
+  display: inline-block;
+  margin: 5px;
+}
+.profile_info:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
